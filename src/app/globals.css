@@ -33,6 +33,7 @@
 }
 
 body {
+  font-family: "AR One Sans", sans-serif;
   font-weight: var(--fw-regular);
   color: var(--text-clr);
 
