@@ -10,10 +10,6 @@
   --text-clr: hsl(0, 0%, 5%);
   --paragraph-text-clr: hsl(0, 0%, 16%);
 
-  /* Font-Family */
-  --heading-font-family: "Space Grotesk", sans-serif;
-  --body-font-family: "AR One Sans", sans-serif;
-
   /* Font-Weight */
   --fw-regular: 400;
   --fw-bold: 700;
@@ -37,11 +33,10 @@
 }
 
 body {
-  font-family: var(--body-font-family);
   font-weight: var(--fw-regular);
   color: var(--text-clr);
 
-  background-color: var(--color-body-background);
+  background-color: var(--background-clr);
 
   transition: var(--body-theme-transition);
 }
