@@ -3,19 +3,45 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Colors */
+  --primary-clr: hsl(25, 100%, 62%);
+  --background-clr: hsl(225, 14%, 95%);
+  --secondary-bg-clr: hsl(60, 100%, 100%);
+  --text-clr: hsl(0, 0%, 5%);
+  --paragraph-text-clr: hsl(0, 0%, 16%);
+
+  /* Font-Family */
+  --heading-font-family: "Space Grotesk", sans-serif;
+  --body-font-family: "AR One Sans", sans-serif;
+
+  /* Font-Weight */
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* Font-Size */
+  --fs-16-18: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+  --fs-18-20: clamp(1.125rem, 1.0893rem + 0.1786vw, 1.25rem);
+  --fs-32-36: clamp(2rem, 1.9286rem + 0.3571vw, 2.25rem);
+
+  /* Transition */
+  --body-theme-transition: background-color 250ms ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark Mode */
+:root.dark {
+  --primary-clr: hsl(155, 61%, 44%);
+  --background-clr: hsl(240, 8%, 9%);
+  --secondary-bg-clr: hsl(216, 6%, 15%);
+  --text-clr: hsl(60, 100%, 100%);
+  --paragraph-text-clr: hsl(214, 16%, 64%);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--body-font-family);
+  font-weight: var(--fw-regular);
+  color: var(--text-clr);
+
+  background-color: var(--color-body-background);
+
+  transition: var(--body-theme-transition);
 }
