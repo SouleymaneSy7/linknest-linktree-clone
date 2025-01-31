@@ -1,4 +1,4 @@
-"Use Client";
+"use client";
 
 import React, { type ComponentPropsWithoutRef, type ReactNode } from "react";
 
