@@ -31,6 +31,9 @@ export default {
       "text-clr": "var(--text-clr)",
       "paragraph-text-clr": "var(--paragraph-text-clr)",
     },
+    fontFamily: {
+      "space-grotesk": ["var(--font-space-grotesk)"],
+    },
     fontSize: {
       "fs-sm": "var(--fs-16-18)",
       "fs-lg": "var(--fs-18-20)",
