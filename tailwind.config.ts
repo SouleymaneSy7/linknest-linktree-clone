@@ -18,10 +18,10 @@ export default {
       center: true,
       padding: "1.5rem",
       screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1200px",
+        sm: "620px",
+        md: "620px",
+        lg: "620px",
+        xl: "620px",
       },
     },
     colors: {
