@@ -38,6 +38,10 @@
     transition: var(--body-theme-transition);
   }
 
+  svg path {
+    @apply fill-text-clr;
+  }
+
   .visually-hidden {
     display: inline-block;
     position: absolute;
