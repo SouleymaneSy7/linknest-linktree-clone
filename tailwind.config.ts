@@ -12,7 +12,6 @@ export default {
       sm: "640px",
       md: "768px",
       lg: "1024px",
-      xl: "1440px",
     },
     container: {
       center: true,
@@ -21,7 +20,6 @@ export default {
         sm: "620px",
         md: "620px",
         lg: "620px",
-        xl: "620px",
       },
     },
     colors: {
@@ -33,6 +31,7 @@ export default {
     },
     fontFamily: {
       "space-grotesk": ["var(--font-space-grotesk)"],
+      "ar-one-sans": ["var(--font-ar-one-sans)"]
     },
     fontSize: {
       "fs-sm": "var(--fs-16-18)",
