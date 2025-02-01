@@ -32,28 +32,25 @@
   --paragraph-text-clr: hsl(214, 16%, 64%);
 }
 
-body {
-  font-family: "AR One Sans", sans-serif;
-  font-weight: var(--fw-regular);
-  color: var(--text-clr);
+@layer base {
+  body {
+    @apply font-ar-one-sans font-fw-regular text-text-clr bg-background-clr;
+    transition: var(--body-theme-transition);
+  }
 
-  background-color: var(--background-clr);
+  .visually-hidden {
+    display: inline-block;
+    position: absolute;
 
-  transition: var(--body-theme-transition);
-}
+    height: 1px;
+    width: 1px;
 
-.visually-hidden {
-  display: inline-block;
-  position: absolute;
+    border: 0;
+    clip: rect(0 0 0 0);
 
-  height: 1px;
-  width: 1px;
+    margin: -1px;
+    padding: 0;
 
-  border: 0;
-  clip: rect(0 0 0 0);
-
-  margin: -1px;
-  padding: 0;
-
-  overflow: hidden;
+    overflow: hidden;
+  }
 }
