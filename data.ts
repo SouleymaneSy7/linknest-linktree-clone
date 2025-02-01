@@ -5,6 +5,7 @@ import {
   MessengerIcon,
   PhoneIcon,
   SnapchatIcon,
+  TwitterIcon,
   WhatsappIcon,
 } from "@/components/Icons/Icons.component";
 
@@ -44,7 +45,7 @@ const profileData = {
     {
       title: "Contacter moi sur Twitter",
       url: "https://www.twitter.com",
-      src: FacebookIcon,
+      src: TwitterIcon,
     },
     {
       title: "Contacter moi sur Messenger",
