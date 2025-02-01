@@ -3,7 +3,7 @@ import React from "react";
 import Header from "@/components/Header";
 import Main from "@/components/Main";
 
-const Home: React.FC = () => {
+const Page: React.FC = () => {
   return (
     <React.Fragment>
       <Header />
@@ -12,4 +12,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Page;
