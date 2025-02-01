@@ -6,11 +6,17 @@ import "./globals.css";
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
+  weight: "700",
+  display: "swap",
+  adjustFontFallback: false,
 });
 
 const AROneSans = AR_One_Sans({
   variable: "--font-ar-one-sans",
   subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
@@ -26,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${AROneSans.variable} ${spaceGrotesk.variable} antialiased`}
+        className={`${AROneSans.className} ${spaceGrotesk.className} antialiased`}
       >
         {children}
       </body>
