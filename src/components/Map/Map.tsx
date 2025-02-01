@@ -1,6 +1,7 @@
 import React from "react";
 
 import L from "leaflet";
+import { Popup } from "react-leaflet";
 import { Marker } from "react-leaflet/Marker";
 import { TileLayer } from "react-leaflet/TileLayer";
 import { MapContainer } from "react-leaflet/MapContainer";
@@ -11,7 +12,6 @@ import { MARKER } from "../Icons/Icons.component";
 
 const lat = 9.727795;
 const long = -13.437069;
-
 
 const MarkerIcon = L.icon({
   iconUrl: MARKER,
@@ -24,7 +24,7 @@ const Map: React.FC = () => {
   return (
     <MapContainer
       center={[lat, long]}
-      zoom={14}
+      zoom={11}
       scrollWheelZoom={false}
       style={{ width: "100%", height: "100%" }}
     >
@@ -32,7 +32,9 @@ const Map: React.FC = () => {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[lat, long]} icon={MarkerIcon} />
+      <Marker position={[lat, long]} icon={MarkerIcon}>
+        <Popup>👋️ Salut tous le monde.</Popup>
+      </Marker>
     </MapContainer>
   );
 };
