@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.variable} ${AROneSans.variable} antialiased`}
+        className={`${AROneSans.variable} ${spaceGrotesk.variable} antialiased`}
       >
         {children}
       </body>
