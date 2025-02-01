@@ -1,27 +1,38 @@
 import React from "react";
 import Map from "./Map";
 import { LocationIcon } from "./Icons/Icons.component";
+import Title from "./Title";
+import Container from "./Container";
 
 const ProfileMap: React.FC = () => {
   return (
-    <section className="rounded-md bg-secondary-bg-clr py-5 px-4 mb-4 lg:py-5 lg:px-6">
-      <h2 className="font-space-grotesk text-fs-lg text-text-clr flex gap-3">
+    <Container
+      as={"section"}
+      className="rounded-md bg-secondary-bg-clr py-5 px-4 mb-4 lg:py-5 lg:px-6"
+    >
+      <Title
+        level="h2"
+        className="font-space-grotesk font-fw-bold text-fs-lg text-text-clr flex gap-3"
+      >
         <LocationIcon />
         Addresse
-      </h2>
+      </Title>
 
       <div className="w-full h-[213px] rounded-md my-3 overflow-hidden lg:h-60">
         <Map />
       </div>
 
       <div>
-        <h3 className="text-fs-lg font-space-grotesk font-fw-bold">
+        <Title
+          level="h3"
+          className="text-fs-lg font-space-grotesk font-fw-bold"
+        >
           Friguiady
-        </h3>
+        </Title>
         <p>Maneah, Coyah</p>
         <p className="text-paragraph-text-clr">Guinée - Conakry</p>
       </div>
-    </section>
+    </Container>
   );
 };
 
