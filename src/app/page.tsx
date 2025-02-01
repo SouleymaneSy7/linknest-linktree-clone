@@ -5,10 +5,10 @@ import Main from "@/components/Main";
 
 const Page: React.FC = () => {
   return (
-    <React.Fragment>
+    <div>
       <Header />
       <Main />
-    </React.Fragment>
+    </div>
   );
 };
 
