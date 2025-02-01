@@ -29,7 +29,7 @@ const profileData = {
   profile_socials: [
     {
       title: "Appeler moi sur mon téléphone",
-      url: "tel:+05890000111",
+      url: "tel:+224624896251",
       src: PhoneIcon,
     },
     {
