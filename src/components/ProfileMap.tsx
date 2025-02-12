@@ -1,5 +1,5 @@
 import React from "react";
-import MapWithNoSSR from "@/components/Map/index.ts";
+import MapWithNoSSR from "@/components/Map/index";
 import { LocationIcon } from "./Icons/Icons.component";
 import Title from "./Title";
 import Container from "./Container";
