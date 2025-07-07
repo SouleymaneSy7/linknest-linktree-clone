@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, AR_One_Sans } from "next/font/google";
-import { ThemeProvider } from "@/components/ThemeProvider"
+import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -30,16 +30,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${AROneSans.className} ${spaceGrotesk.className} antialiased`}
       >
-        <ThemeProvider 
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-        >
-           {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
         </ThemeProvider>
       </body>
     </html>
