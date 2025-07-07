@@ -1,4 +1,5 @@
 import React from "react";
+import MapWithNoSSR from "@/components/Map/MapWithNoSSR";
 import { LocationIcon } from "./Icons/Icons.component";
 import Title from "./Title";
 import Container from "./Container";
@@ -18,6 +19,7 @@ const ProfileMap: React.FC = () => {
       </Title>
 
       <div className="w-full h-[213px] rounded-md my-3 overflow-hidden lg:h-60">
+        <MapWithNoSSR />
       </div>
 
       <div>

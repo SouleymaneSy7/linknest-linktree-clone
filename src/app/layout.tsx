@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, AR_One_Sans } from "next/font/google";
-
+import { ThemeProvider } from "@/components/ThemeProvider"
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -34,7 +34,13 @@ export default function RootLayout({
       <body
         className={`${AROneSans.className} ${spaceGrotesk.className} antialiased`}
       >
-        {children}
+        <ThemeProvider 
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+        >
+           {children}
+        </ThemeProvider>
       </body>
     </html>
   );
