@@ -19,7 +19,7 @@ const ProfileSocials: React.FC<ProfileSocialsPropsType> = ({ socialsList }) => {
           return (
             <li key={title}>
               <a href={url}>
-                <Icon className="fill-text-clr" />
+                <Icon className="text-foreground" />
               </a>
             </li>
           );

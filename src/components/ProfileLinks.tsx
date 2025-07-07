@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "@/components/ui/button"
 
 interface ProfileLinksPropsType {
   linkList: {
@@ -15,13 +16,16 @@ const ProfileLinks: React.FC<ProfileLinksPropsType> = ({ linkList }) => {
         {linkList.map(({ name, title, url }) => {
           return (
             <li key={name}>
-              <a
+              <Button asChild variant="secondary" className="font-semibold">
+                <a
                 href={url}
                 title={title}
+                target="_blank"
                 className="font-space-grotesk font-fw-bold text-text-clr w-full h-14 flex justify-center items-center rounded-sm bg-secondary-bg-clr "
-              >
-                {name}
-              </a>
+                >
+                 {name}
+                </a>
+              </Button>
             </li>
           );
         })}

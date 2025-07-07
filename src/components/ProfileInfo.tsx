@@ -25,6 +25,8 @@ const ProfileInfo: React.FC<ProfileInfoPropsType> = ({
             alt="Photo d'un homme"
             className="rounded-full w-full h-full object-cover"
             priority
+            width={80}
+            height={80}
           />
         </div>
       </div>
@@ -32,14 +34,15 @@ const ProfileInfo: React.FC<ProfileInfoPropsType> = ({
       <div className="text-center mt-4">
         <Title
           level="h1"
-          className="text-fs-xlg text-text-clr font-space-grotesk font-fw-bold"
+          className="text-fs-xlg text-foreground font-space-grotesk font-fw-bold"
         >
           {profileName}
         </Title>
-        <Title level="h2" className="text-fs-lg text-primary-clr font-fw-bold">
+
+        <Title level="h2" className="text-fs-lg text-primary font-fw-bold">
           {profileWork}
         </Title>
-        <p className="text-paragraph-text-clr mt-1">&quot;{profileBio}&quot;</p>
+        <p className="text-muted-foreground mt-1">&quot;{profileBio}&quot;</p>
       </div>
     </section>
   );

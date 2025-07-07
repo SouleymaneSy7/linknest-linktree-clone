@@ -8,11 +8,11 @@ const ProfileMap: React.FC = () => {
   return (
     <Container
       as={"section"}
-      className="rounded-md bg-secondary-bg-clr py-5 px-4 mb-4 lg:py-5 lg:px-6"
+      className="rounded-md bg-secondary py-5 px-4 mb-4 lg:py-5 lg:px-6"
     >
       <Title
         level="h2"
-        className="font-space-grotesk font-fw-bold text-fs-lg text-text-clr flex gap-3"
+        className="font-space-grotesk font-fw-bold text-fs-lg text-card-foreground flex gap-3"
       >
         <LocationIcon />
         Addresse
@@ -22,15 +22,20 @@ const ProfileMap: React.FC = () => {
         <MapWithNoSSR />
       </div>
 
-      <div>
-        <Title
-          level="h3"
-          className="text-fs-lg font-space-grotesk font-fw-bold"
-        >
-          Friguiady
-        </Title>
-        <p>Maneah, Coyah</p>
-        <p className="text-paragraph-text-clr">Guinée - Conakry</p>
+      <div className="flex items-start justify-between">
+        <div>
+          <Title
+            level="h3"
+            className="text-fs-lg font-space-grotesk font-fw-bold text-card-foreground"
+          >
+            Friguiady
+          </Title>
+          <p>Maneah, Coyah</p>
+        </div>
+
+        <div>
+         <p className="text-muted-foreground text-fs-lg">Guinée - Conakry</p>
+        </div>
       </div>
     </Container>
   );
