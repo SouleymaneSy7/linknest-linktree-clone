@@ -2,11 +2,10 @@
 
 import React from "react";
 
-import Buttons from "./Buttons";
-import Container from "./Container";
-import VisualyHidden from "./VisualyHidden";
-
-import { CopyIcon } from "./Icons/Icons.component";
+// import { Button }  from "@/components/ui/button";
+import Container from "@/components/Container";
+import VisualyHidden from "@/components/VisualyHidden";
+import Link from "next/link"
 // import useCopyToClipboard from "../hooks/useCopyToClipboard";
 
 const Header: React.FC = () => {
@@ -46,37 +45,34 @@ const Header: React.FC = () => {
   // };
   //
   return (
-    <Container as={"header"} className="container pt-4 lg:py-8">
-      <nav
+    <Container as={"header"} className="container pt-8">
+    <nav
         role="navigation"
         className="flex justify-between items-center w-full"
       >
-        <a href="#" className="font-space-grotesk font-fw-bold text-fs-lg">
-          Link<span className="text-primary-clr">Nest</span>
-        </a>
+        <Link href={"/"} className="font-space-grotesk font-fw-bold text-fs-lg">
+          Link<span className="text-primary">Nest</span>
+        </Link>
 
-        <div className="flex gap-3">
-          <Buttons
-            type="button"
-            title="Copier le liens dans le presse-papier"
-            className="bg-secondary-bg-clr rounded-sm w-10 h-8 flex justify-center items-center"
-          >
-            <CopyIcon className="fill-text-clr" />
-            <VisualyHidden>
-              Copier le liens dans le presse-papier.
-            </VisualyHidden>
-          </Buttons>
-
-          <Buttons
-            type="button"
-            className="flex items-center justify-start bg-secondary-bg-clr rounded-sm w-[68px] h-8 p-1"
-          >
-            <span className="inline-block w-7 h-full rounded-sm bg-primary-clr transition-transform"></span>
-            <VisualyHidden>
-              Changer le theme en sombre ou lumineux.
-            </VisualyHidden>
-          </Buttons>
-        </div>
+        {/* <div className="flex gap-3"> */}
+        {/*   <Button */}
+        {/*     title="Copier le liens dans le presse-papier" */}
+        {/*   //  className="bg-secondary-bg-clr rounded-sm w-10 h-8 flex justify-center items-center" */}
+        {/*   > */}
+        {/*     <VisualyHidden> */}
+        {/*       Copier le liens dans le presse-papier. */}
+        {/*     </VisualyHidden> */}
+        {/*   </Button> */}
+        {/**/}
+        {/*   <Button */}
+        {/*    // className="flex items-center justify-start bg-secondary-bg-clr rounded-sm w-[68px] h-8 p-1" */}
+        {/*   > */}
+        {/*     <span className="inline-block w-7 h-full rounded-sm bg-primary-clr transition-transform"></span> */}
+        {/*     <VisualyHidden> */}
+        {/*       Changer le theme en sombre ou lumineux. */}
+        {/*     </VisualyHidden> */}
+        {/*   </Button> */}
+        {/* </div> */}
       </nav>
     </Container>
   );
