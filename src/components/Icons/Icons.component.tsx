@@ -1,4 +1,4 @@
-import { SVGProps } from "react";
+import { SVGProps } from 'react'
 
 export const CopyIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
@@ -14,8 +14,8 @@ export const CopyIcon = (props: SVGProps<SVGSVGElement>) => {
         fill="#0D0D0D"
       />
     </svg>
-  );
-};
+  )
+}
 
 export const FacebookIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
@@ -31,8 +31,8 @@ export const FacebookIcon = (props: SVGProps<SVGSVGElement>) => {
         fill="#0D0D0D"
       />
     </svg>
-  );
-};
+  )
+}
 export const LinkedInIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
@@ -47,8 +47,8 @@ export const LinkedInIcon = (props: SVGProps<SVGSVGElement>) => {
         fill="#0D0D0D"
       />
     </svg>
-  );
-};
+  )
+}
 export const LocationIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
@@ -63,8 +63,8 @@ export const LocationIcon = (props: SVGProps<SVGSVGElement>) => {
         fill="#0D0D0D"
       />
     </svg>
-  );
-};
+  )
+}
 export const MessengerIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
@@ -79,8 +79,8 @@ export const MessengerIcon = (props: SVGProps<SVGSVGElement>) => {
         fill="#0D0D0D"
       />
     </svg>
-  );
-};
+  )
+}
 
 export const PhoneIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
@@ -96,8 +96,8 @@ export const PhoneIcon = (props: SVGProps<SVGSVGElement>) => {
         fill="#0D0D0D"
       />
     </svg>
-  );
-};
+  )
+}
 
 export const SnapchatIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
@@ -113,8 +113,8 @@ export const SnapchatIcon = (props: SVGProps<SVGSVGElement>) => {
         fill="#0D0D0D"
       />
     </svg>
-  );
-};
+  )
+}
 
 export const TwitterIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
@@ -130,8 +130,8 @@ export const TwitterIcon = (props: SVGProps<SVGSVGElement>) => {
         fill="#0D0D0D"
       />
     </svg>
-  );
-};
+  )
+}
 
 export const WhatsappIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
@@ -147,9 +147,9 @@ export const WhatsappIcon = (props: SVGProps<SVGSVGElement>) => {
         fill="#0D0D0D"
       />
     </svg>
-  );
-};
+  )
+}
 
 export const MARKER = `data:image/svg+xml;utf8,${encodeURIComponent(
   `<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M24 4c-7.73 0-14 6.27-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.73-6.27-14-14-14zm0 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/><path d="M0 0h48v48H0z" fill="none"/></svg>`
-)}`;
+)}`

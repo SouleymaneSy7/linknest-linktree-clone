@@ -1,9 +1,9 @@
-"use client";
+'use client'
 
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic'
 
-const MapWithNoSSR = dynamic(() => import("./Map"), {
+const MapWithNoSSR = dynamic(() => import('./Map'), {
   ssr: false,
-});
+})
 
-export default MapWithNoSSR;
+export default MapWithNoSSR

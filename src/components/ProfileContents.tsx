@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-import { profileData } from "../../data";
+import { profileData } from '../../data'
 
-import ProfileInfo from "./ProfileInfo";
-import ProfileLinks from "./ProfileLinks";
-import ProfileSocials from "./ProfileSocials";
-import ProfileMap from "./ProfileMap";
+import ProfileInfo from './ProfileInfo'
+import ProfileLinks from './ProfileLinks'
+import ProfileSocials from './ProfileSocials'
+import ProfileMap from './ProfileMap'
 
 const ProfileContents: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ const ProfileContents: React.FC = () => {
       <ProfileLinks linkList={profileData.profile_links} />
       <ProfileSocials socialsList={profileData.profile_socials} />
     </main>
-  );
-};
+  )
+}
 
-export default ProfileContents;
+export default ProfileContents

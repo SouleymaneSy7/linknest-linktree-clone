@@ -1,8 +1,8 @@
-import React from "react";
-import ProfileContents from "./ProfileContents";
+import React from 'react'
+import ProfileContents from './ProfileContents'
 
 const Main: React.FC = () => {
-  return <ProfileContents />;
-};
+  return <ProfileContents />
+}
 
-export default Main;
+export default Main

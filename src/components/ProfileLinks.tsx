@@ -1,12 +1,12 @@
-import React from "react";
-import { Button } from "@/components/ui/button"
+import React from 'react'
+import { Button } from '@/components/ui/button'
 
 interface ProfileLinksPropsType {
   linkList: {
-    name: string;
-    title: string;
-    url: string;
-  }[];
+    name: string
+    title: string
+    url: string
+  }[]
 }
 
 const ProfileLinks: React.FC<ProfileLinksPropsType> = ({ linkList }) => {
@@ -18,20 +18,20 @@ const ProfileLinks: React.FC<ProfileLinksPropsType> = ({ linkList }) => {
             <li key={name}>
               <Button asChild variant="secondary" className="font-semibold">
                 <a
-                href={url}
-                title={title}
-                target="_blank"
-                className="font-space-grotesk font-fw-bold text-text-clr w-full h-14 flex justify-center items-center rounded-sm bg-secondary-bg-clr "
+                  href={url}
+                  title={title}
+                  target="_blank"
+                  className="font-space-grotesk font-fw-bold text-text-clr w-full h-14 flex justify-center items-center rounded-sm bg-secondary-bg-clr "
                 >
-                 {name}
+                  {name}
                 </a>
               </Button>
             </li>
-          );
+          )
         })}
       </ul>
     </React.Fragment>
-  );
-};
+  )
+}
 
-export default ProfileLinks;
+export default ProfileLinks

@@ -1,27 +1,26 @@
-"use client";
+'use client'
 
-import React from "react";
+import React from 'react'
 
-import SwithCustomization from "@/components/customized/switch/switch-07"
-import Container from "@/components/Container";
-import VisualyHidden from "@/components/VisualyHidden";
-import Link from "next/link"
+import SwithCustomization from '@/components/ui/switch'
+import Container from '@/components/Container'
+import Link from 'next/link'
 
 const Header: React.FC = () => {
   return (
-    <Container as={"header"} className="container pt-8">
-    <nav
+    <Container as={'header'} className="container pt-8">
+      <nav
         role="navigation"
         className="flex justify-between items-center w-full"
       >
-        <Link href={"/"} className="font-space-grotesk font-fw-bold text-fs-lg">
+        <Link href={'/'} className="font-space-grotesk font-fw-bold text-fs-lg">
           Link<span className="text-primary">Nest</span>
         </Link>
 
         <SwithCustomization />
-     </nav>
+      </nav>
     </Container>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

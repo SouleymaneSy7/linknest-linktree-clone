@@ -1,13 +1,13 @@
-import React from "react";
-import MapWithNoSSR from "@/components/Map/MapWithNoSSR";
-import { LocationIcon } from "./Icons/Icons.component";
-import Title from "./Title";
-import Container from "./Container";
+import React from 'react'
+import MapWithNoSSR from '@/components/Map/MapWithNoSSR'
+import { LocationIcon } from './Icons/Icons.component'
+import Title from './Title'
+import Container from './Container'
 
 const ProfileMap: React.FC = () => {
   return (
     <Container
-      as={"section"}
+      as={'section'}
       className="rounded-md bg-secondary py-5 px-4 mb-4 lg:py-5 lg:px-6"
     >
       <Title
@@ -34,11 +34,11 @@ const ProfileMap: React.FC = () => {
         </div>
 
         <div>
-         <p className="text-muted-foreground text-fs-lg">Guinée - Conakry</p>
+          <p className="text-muted-foreground text-fs-lg">Guinée - Conakry</p>
         </div>
       </div>
     </Container>
-  );
-};
+  )
+}
 
-export default ProfileMap;
+export default ProfileMap

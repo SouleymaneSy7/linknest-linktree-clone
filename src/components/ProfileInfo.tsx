@@ -1,13 +1,13 @@
-import React from "react";
-import Image, { StaticImageData } from "next/image";
+import React from 'react'
+import Image, { StaticImageData } from 'next/image'
 
-import Title from "./Title";
+import Title from './Title'
 
 interface ProfileInfoPropsType {
-  profileName: string;
-  profileImg: StaticImageData;
-  profileWork: string;
-  profileBio: string;
+  profileName: string
+  profileImg: StaticImageData
+  profileWork: string
+  profileBio: string
 }
 
 const ProfileInfo: React.FC<ProfileInfoPropsType> = ({
@@ -45,7 +45,7 @@ const ProfileInfo: React.FC<ProfileInfoPropsType> = ({
         <p className="text-muted-foreground mt-1">&quot;{profileBio}&quot;</p>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ProfileInfo;
+export default ProfileInfo

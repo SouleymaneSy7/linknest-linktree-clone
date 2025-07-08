@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
 type ButtonPropsType = {
-  children: React.ReactNode;
-  type: "button" | "submit";
-} & React.ComponentPropsWithoutRef<"button">;
+  children: React.ReactNode
+  type: 'button' | 'submit'
+} & React.ComponentPropsWithoutRef<'button'>
 
 const Buttons: React.FC<ButtonPropsType> = ({
   children,
@@ -14,7 +14,7 @@ const Buttons: React.FC<ButtonPropsType> = ({
     <button type={type} {...delegatedProps}>
       {children}
     </button>
-  );
-};
+  )
+}
 
-export default Buttons;
+export default Buttons
