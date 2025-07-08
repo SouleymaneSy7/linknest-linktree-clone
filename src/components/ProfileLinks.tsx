@@ -12,7 +12,7 @@ interface ProfileLinksPropsType {
 const ProfileLinks: React.FC<ProfileLinksPropsType> = ({ linkList }) => {
   return (
     <React.Fragment>
-      <ul className="flex flex-col gap-3">
+      <ul className="flex flex-col gap-3 mt-10">
         {linkList.map(({ name, title, url }) => {
           return (
             <li key={name}>

@@ -25,8 +25,8 @@ const ProfileInfo: React.FC<ProfileInfoPropsType> = ({
             alt="Photo d'un homme"
             className="rounded-full w-full h-full object-cover"
             priority
-            width={80}
-            height={80}
+            width={800}
+            height={800}
           />
         </div>
       </div>
