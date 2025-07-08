@@ -1,8 +1,9 @@
-import React from 'react'
+import * as React from 'react'
+
 import MapWithNoSSR from '@/components/Map/MapWithNoSSR'
-import { LocationIcon } from './Icons/Icons.component'
 import Title from './Title'
 import Container from './Container'
+import { MapPinIcon } from 'lucide-react'
 
 const ProfileMap: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ const ProfileMap: React.FC = () => {
         level="h2"
         className="font-space-grotesk font-fw-bold text-fs-lg text-card-foreground flex gap-3"
       >
-        <LocationIcon />
+        <MapPinIcon />
         Addresse
       </Title>
 
