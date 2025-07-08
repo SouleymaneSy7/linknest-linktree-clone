@@ -1,21 +1,12 @@
 import profileImg from "./public/images/profile-img.jpg";
-// import {
-//   FacebookIcon,
-//   LinkedInIcon,
-//   MessengerIcon,
-//   PhoneIcon,
-//   SnapchatIcon,
-//   TwitterIcon,
-//   WhatsappIcon,
-// } from "@/components/Icons/Icons.component";
 
 import { PhoneIcon, GithubIcon, FacebookIcon, LinkedinIcon, TwitterIcon, CodepenIcon, SlackIcon, DribbbleIcon } from 'lucide-react'
 
 const profileData = {
-  profile_name: "Mohamed Lamine Sy",
+  profile_name: "Souleymane Sy",
   profile_img: profileImg,
-  profile_work: "Chauffeur - Poids Lourd",
-  profile_bio: "Le meilleur chauffeur que je connaisse!",
+  profile_work: "Frontend - Web Developper",
+  profile_bio: "Developpeur Web très passionnée pour les nouvelles technologies.",
   profile_links: [
     {
       name: "Portfolio",
@@ -44,12 +35,11 @@ const profileData = {
       url: "https://www.facebook.com",
       src: FacebookIcon,
     },
-{
+    {
       title: "Contacter moi sur LinkedIn",
       url: "https://www.linkedin.com",
       src: LinkedinIcon,
     },
-
     {
       title: "Contacter moi sur Twitter",
       url: "https://www.twitter.com",
@@ -60,12 +50,11 @@ const profileData = {
       url: "https://www.dribbble.com",
       src: DribbbleIcon,
     },
-        {
+    {
       title: "Contacter moi sur Slack",
       url: "https://www.slack.com",
       src: SlackIcon,
     },
-
     {
       title: "Contacter moi sur Codepen",
       url: "https://www.codepen.com",
