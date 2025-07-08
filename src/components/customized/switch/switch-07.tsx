@@ -3,6 +3,7 @@
 import * as SwitchPrimitives from "@radix-ui/react-switch";
 import * as React from "react";
 
+import { useTheme } from "next-themes"
 import { cn } from "@/lib/utils";
 import { MoonIcon, SunMediumIcon } from "lucide-react";
 
@@ -34,9 +35,9 @@ const Switch = React.forwardRef<
 ));
 Switch.displayName = SwitchPrimitives.Root.displayName;
 
-const SwitchCustomizationDemo = () => {
+const SwitchCustomization = () => {
   const [isDarkMode, setIsDarkMode] = React.useState(false);
-
+  const { setTheme } = useTheme()
   return (
     <Switch
       icon={
@@ -47,11 +48,19 @@ const SwitchCustomizationDemo = () => {
         )
       }
       checked={isDarkMode}
-      onCheckedChange={setIsDarkMode}
+      onCheckedChange={() => {
+        setIsDarkMode((prevState) =>  !prevState)
+
+        if(isDarkMode == true) {
+          setTheme("dark")
+        } else {
+          setTheme("light")
+        }
+      }}
       className="h-7 w-12"
       thumbClassName="h-6 w-6 data-[state=checked]:translate-x-5"
     />
   );
 };
 
-export default SwitchCustomizationDemo;
+export default SwitchCustomization;

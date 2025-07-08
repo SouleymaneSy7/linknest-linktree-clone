@@ -2,6 +2,7 @@
 
 import React from "react";
 
+import SwithCustomization from "@/components/customized/switch/switch-07"
 import Container from "@/components/Container";
 import VisualyHidden from "@/components/VisualyHidden";
 import Link from "next/link"
@@ -16,6 +17,8 @@ const Header: React.FC = () => {
         <Link href={"/"} className="font-space-grotesk font-fw-bold text-fs-lg">
           Link<span className="text-primary">Nest</span>
         </Link>
+
+        <SwithCustomization />
      </nav>
     </Container>
   );
