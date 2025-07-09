@@ -13,9 +13,9 @@ interface ProfileSocialsPropsType {
 
 const ProfileSocials: React.FC<ProfileSocialsPropsType> = ({ socialsList }) => {
   return (
-    <Container as="div" className="grid place-items-center mt-12">
+    <Container as="div" className="mt-12 grid place-items-center">
       <List
-        className="flex gap-4 items-center"
+        className="flex items-center gap-4"
         items={socialsList}
         renderItem={({ title, url, src }) => {
           const Icon = src
@@ -28,7 +28,7 @@ const ProfileSocials: React.FC<ProfileSocialsPropsType> = ({ socialsList }) => {
                 title={title}
                 className="text-foreground hover:text-primary transition-colors"
               >
-                <Icon className="text-current-color lg:w-8 lg:h-8" />
+                <Icon className="text-current-color lg:h-8 lg:w-8" />
               </a>
             </li>
           )

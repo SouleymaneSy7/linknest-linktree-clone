@@ -16,7 +16,11 @@ const Title: React.FC<TitleProps> = ({
     return React.createElement(level, delegatedProps, children)
   }
 
-  return <Heading {...delegatedProps} role="heading">{children}</Heading>
+  return (
+    <Heading {...delegatedProps} role="heading">
+      {children}
+    </Heading>
+  )
 }
 
 export default Title

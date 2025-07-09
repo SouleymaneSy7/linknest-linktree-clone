@@ -9,17 +9,17 @@ const ProfileMap: React.FC = () => {
   return (
     <Container
       as={'section'}
-      className="rounded-sm bg-secondary py-5 px-4 mb-4 lg:py-5 lg:px-6"
+      className="bg-secondary mb-4 rounded-sm px-4 py-5 lg:px-6 lg:py-5"
     >
       <Title
         level="h2"
-        className="font-space-grotesk font-bold text-fs-lg text-foreground flex gap-2"
+        className="font-space-grotesk text-fs-lg text-foreground flex gap-2 font-bold"
       >
         <MapPinIcon />
         Addresse
       </Title>
 
-      <div className="w-full h-[213px] rounded-md my-3 overflow-hidden lg:h-60">
+      <div className="my-3 h-[213px] w-full overflow-hidden rounded-md lg:h-60">
         <MapWithNoSSR />
       </div>
 
@@ -27,7 +27,7 @@ const ProfileMap: React.FC = () => {
         <div>
           <Title
             level="h3"
-            className="text-fs-lg font-space-grotesk font-bold text-foreground"
+            className="text-fs-lg font-space-grotesk text-foreground font-bold"
           >
             Friguiady
           </Title>

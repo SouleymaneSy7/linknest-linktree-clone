@@ -20,11 +20,11 @@ const ProfileInfo: React.FC<ProfileInfoPropsType> = ({
   return (
     <Container as={'section'} className="mb-9">
       <div className="flex justify-center">
-        <div className="w-24 h-24 md:w-40 md:h-40">
+        <div className="h-24 w-24 md:h-40 md:w-40">
           <Image
             src={profileImg}
             alt="Photo d'un homme"
-            className="rounded-full w-full h-full object-cover aspect-square"
+            className="aspect-square h-full w-full rounded-full object-cover"
             width={800}
             height={800}
             priority
@@ -32,7 +32,7 @@ const ProfileInfo: React.FC<ProfileInfoPropsType> = ({
         </div>
       </div>
 
-      <div className="text-center mt-4">
+      <div className="mt-4 text-center">
         <Title
           level="h1"
           className="text-heading text-foreground font-space-grotesk font-bold"

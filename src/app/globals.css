@@ -130,7 +130,7 @@
 }
 
 @utility container {
-  @apply px-6 mx-auto max-w-[var(--container)] lg:px-8;
+  @apply mx-auto max-w-[var(--container)] px-6 lg:px-8;
 }
 
 @layer base {
