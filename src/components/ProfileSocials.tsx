@@ -15,7 +15,7 @@ const ProfileSocials: React.FC<ProfileSocialsPropsType> = ({ socialsList }) => {
   return (
     <Container as="div" className="mt-12 grid place-items-center">
       <List
-        className="flex items-center gap-4"
+        className="flex flex-wrap items-center gap-2 lg:gap-4"
         items={socialsList}
         renderItem={({ title, url, src }) => {
           const Icon = src
