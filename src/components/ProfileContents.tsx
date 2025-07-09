@@ -9,7 +9,7 @@ import ProfileMap from './ProfileMap'
 
 const ProfileContents: React.FC = () => {
   return (
-    <main role="main" className="container py-8 lg:pt-14">
+    <main role="main" className="container py-8 lg:py-14">
       <ProfileInfo
         profileName={profileData.profile_name}
         profileImg={profileData.profile_img}
