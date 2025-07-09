@@ -1,6 +1,8 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 
+import List from '@/components/List'
+
 interface ProfileLinksPropsType {
   linkList: {
     name: string
@@ -11,26 +13,25 @@ interface ProfileLinksPropsType {
 
 const ProfileLinks: React.FC<ProfileLinksPropsType> = ({ linkList }) => {
   return (
-    <React.Fragment>
-      <ul className="flex flex-col gap-3 mt-10">
-        {linkList.map(({ name, title, url }) => {
-          return (
-            <li key={name}>
-              <Button asChild variant="secondary" className="font-semibold">
-                <a
-                  href={url}
-                  title={title}
-                  target="_blank"
-                  className="font-space-grotesk font-fw-bold text-text-clr w-full h-14 flex justify-center items-center rounded-sm bg-secondary-bg-clr "
-                >
-                  {name}
-                </a>
-              </Button>
-            </li>
-          )
-        })}
-      </ul>
-    </React.Fragment>
+    <List
+      className="flex flex-col gap-3 mt-10"
+      items={linkList}
+      renderItem={({ name, title, url }) => {
+        return (
+          <li key={name}>
+            <Button
+              asChild
+              variant="secondary"
+              className="font-bold font-space-grotesk text-foreground w-full h-12 flex justify-center items-center rounded-sm"
+            >
+              <a href={url} title={title} target="_blank">
+                {name}
+              </a>
+            </Button>
+          </li>
+        )
+      }}
+    />
   )
 }
 
