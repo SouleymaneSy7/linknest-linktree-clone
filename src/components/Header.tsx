@@ -1,29 +1,29 @@
-"use client";
+'use client'
 
-import * as React from "react";
+import * as React from 'react'
 
-import SwithCustomization from "@/components/ui/switch";
-import Container from "@/components/Container";
-import Link from "next/link";
+import Container from '@/components/Container'
+import Link from 'next/link'
+import { ModeToggle } from './layouts/ModeToggle'
 
 const Header: React.FC = () => {
   return (
-    <Container as={"header"} className="container pt-8">
+    <Container as={'header'} className="container pt-8">
       <nav
         role="navigation"
-        className="flex justify-between items-center w-full"
+        className="flex w-full items-center justify-between"
       >
         <Link
-          href={"/"}
-          className="font-space-grotesk font-bold text-sub-heading"
+          href={'/'}
+          className="font-space-grotesk text-sub-heading font-bold"
         >
           Link<span className="text-primary">Nest</span>
         </Link>
 
-        <SwithCustomization />
+        <ModeToggle />
       </nav>
     </Container>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
