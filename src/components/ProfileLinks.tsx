@@ -1,14 +1,14 @@
-import React from 'react'
-import { Button } from '@/components/ui/button'
+import React from "react";
+import { Button } from "@/components/ui/button";
 
-import List from '@/components/List'
+import List from "@/components/List";
 
 interface ProfileLinksPropsType {
   linkList: {
-    name: string
-    title: string
-    url: string
-  }[]
+    name: string;
+    title: string;
+    url: string;
+  }[];
 }
 
 const ProfileLinks: React.FC<ProfileLinksPropsType> = ({ linkList }) => {
@@ -22,17 +22,17 @@ const ProfileLinks: React.FC<ProfileLinksPropsType> = ({ linkList }) => {
             <Button
               asChild
               variant="secondary"
-              className="font-bold font-space-grotesk text-foreground w-full h-12 flex justify-center items-center rounded-sm"
+              className="font-bold font-space-grotesk text-foreground w-full h-13 grid place-items-center rounded-sm"
             >
               <a href={url} title={title} target="_blank">
                 {name}
               </a>
             </Button>
           </li>
-        )
+        );
       }}
     />
-  )
-}
+  );
+};
 
-export default ProfileLinks
+export default ProfileLinks;

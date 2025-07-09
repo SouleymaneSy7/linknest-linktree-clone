@@ -13,7 +13,7 @@ const ProfileMap: React.FC = () => {
     >
       <Title
         level="h2"
-        className="font-space-grotesk font-bold text-fs-lg text-card-foreground flex gap-2"
+        className="font-space-grotesk font-bold text-fs-lg text-foreground flex gap-2"
       >
         <MapPinIcon />
         Addresse
@@ -27,7 +27,7 @@ const ProfileMap: React.FC = () => {
         <div>
           <Title
             level="h3"
-            className="text-fs-lg font-space-grotesk font-bold text-card-foreground"
+            className="text-fs-lg font-space-grotesk font-bold text-foreground"
           >
             Friguiady
           </Title>
@@ -35,7 +35,9 @@ const ProfileMap: React.FC = () => {
         </div>
 
         <div>
-          <p className="text-muted-foreground text-fs-lg">Guinée - Conakry</p>
+          <p className="text-muted-foreground text-sub-heading">
+            Guinée - Conakry
+          </p>
         </div>
       </div>
     </Container>

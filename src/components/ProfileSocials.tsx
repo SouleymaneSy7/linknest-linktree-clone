@@ -13,7 +13,7 @@ interface ProfileSocialsPropsType {
 
 const ProfileSocials: React.FC<ProfileSocialsPropsType> = ({ socialsList }) => {
   return (
-    <Container as="div" className="flex justify-center items-center mt-12">
+    <Container as="div" className="grid place-items-center mt-12">
       <List
         className="flex gap-4 items-center"
         items={socialsList}

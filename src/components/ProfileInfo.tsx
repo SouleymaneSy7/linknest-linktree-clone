@@ -35,12 +35,12 @@ const ProfileInfo: React.FC<ProfileInfoPropsType> = ({
       <div className="text-center mt-4">
         <Title
           level="h1"
-          className="text-fs-xlg text-foreground font-space-grotesk font-bold"
+          className="text-heading text-foreground font-space-grotesk font-bold"
         >
           {profileName}
         </Title>
 
-        <Title level="h2" className="text-fs-lg text-primary font-bold">
+        <Title level="h2" className="text-sub-heading text-primary font-bold">
           {profileWork}
         </Title>
         <p className="text-muted-foreground mt-1">&quot;{profileBio}&quot;</p>
