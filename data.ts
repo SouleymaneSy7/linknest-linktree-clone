@@ -3,13 +3,15 @@ import profileImg from './public/images/profile-img.jpeg'
 import {
   PhoneIcon,
   GithubIcon,
-  FacebookIcon,
   LinkedinIcon,
   TwitterIcon,
   CodepenIcon,
-  SlackIcon,
   DribbbleIcon,
 } from 'lucide-react'
+import {
+  DiscordIcon,
+  FrontendMentorIcon,
+} from '@/components/Icons/Icons.component'
 
 const profileData = {
   profile_name: 'Souleymane Sy',
@@ -42,9 +44,9 @@ const profileData = {
       src: GithubIcon,
     },
     {
-      title: 'Hang out with me on Facebook! 😄',
-      url: 'https://www.facebook.com',
-      src: FacebookIcon,
+      title: 'Hang out with me on Discord! 😄',
+      url: 'https://www.discordapp.com/users/983538508503326772',
+      src: DiscordIcon,
     },
     {
       title: 'Join my LinkedIn crew and let’s network! 💼',
@@ -57,14 +59,14 @@ const profileData = {
       src: TwitterIcon,
     },
     {
+      title: 'Chill with me on Frontend Mentor, let’s vibe!',
+      url: 'https://www.frontendmentor.io/profile/SouleymaneSy7',
+      src: FrontendMentorIcon,
+    },
+    {
       title: 'Swing by my Dribbble for some flair! 🎨',
       url: 'https://dribbble.com/souleymane-sy',
       src: DribbbleIcon,
-    },
-    {
-      title: 'Chill with me on Slack, let’s vibe!',
-      url: 'https://www.slack.com',
-      src: SlackIcon,
     },
     {
       title: 'Code with me on Codepen, let’s rock it! 💻',
