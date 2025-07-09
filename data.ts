@@ -16,8 +16,7 @@ import {
 const profileData = {
   profile_name: 'Souleymane Sy',
   profile_img: profileImg,
-  profile_work:
-    'Frontend - Web Developer, serving up hot code with a smile & zero bugs (fingers crossed)! 😄🔥',
+  profile_work: 'Frontend - Web Developer',
   profile_bio:
     'Skilled Frontend Developer delivering innovative, design-driven solutions, proudly from Guinea-Conakry. 🌍',
   profile_links: [
