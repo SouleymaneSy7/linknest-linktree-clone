@@ -2,7 +2,7 @@ import Header from '@/components/Header'
 import Main from '@/components/Main'
 
 import { cn } from '@/lib/utils'
-import { DotPattern } from '@/components/layouts/DotPattern'
+import { DotPattern } from '@/components/magicui/dot-pattern'
 
 export default function Home() {
   return (
