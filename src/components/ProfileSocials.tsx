@@ -37,7 +37,7 @@ const ProfileSocials: React.FC<ProfileSocialsPropsType> = ({ socialsList }) => {
                       className="text-foreground hover:text-primary transition-colors"
                     >
                       <Icon
-                        className="text-current-color w- lg:h-8 lg:w-8"
+                        className="text-current-color sm:h-6 sm:w-6 lg:h-8 lg:w-8"
                         stroke="currentcolor"
                         strokeWidth={2}
                       />
