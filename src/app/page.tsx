@@ -1,3 +1,5 @@
+import * as React from 'react'
+
 import Header from '@/components/Header'
 import Main from '@/components/Main'
 
@@ -6,7 +8,7 @@ import { DotPattern } from '@/components/magicui/dot-pattern'
 
 export default function Home() {
   return (
-    <>
+    <React.Fragment>
       <div className="absolute inset-0 -z-50 flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
         <DotPattern
           glow={true}
@@ -18,6 +20,6 @@ export default function Home() {
       <Header />
 
       <Main />
-    </>
+    </React.Fragment>
   )
 }
