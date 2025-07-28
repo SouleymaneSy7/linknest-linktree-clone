@@ -13,21 +13,21 @@ const ProfileMap: React.FC = () => {
     >
       <Title
         level="h2"
-        className="font-space-grotesk text-fs-lg text-foreground flex gap-2 font-bold"
+        className="font-space-grotesk text-foreground flex gap-2 font-medium"
       >
         <MapPinIcon />
         Address
       </Title>
 
-      <div className="my-3 h-[213px] w-full overflow-hidden rounded-md lg:h-60">
+      <div className="my-3 h-[213px] w-full overflow-hidden rounded-sm lg:h-60">
         <MapWithNoSSR />
       </div>
 
-      <div className="flex items-end justify-between">
+      <div className="flex items-end justify-between flex-wrap gap-4">
         <div>
           <Title
             level="h3"
-            className="text-fs-lg font-space-grotesk text-foreground font-bold"
+            className="font-space-grotesk text-foreground font-bold"
           >
             Friguiady
           </Title>
@@ -35,7 +35,7 @@ const ProfileMap: React.FC = () => {
         </div>
 
         <div>
-          <p className="text-muted-foreground text-sub-heading">
+          <p className="font-space-grotesk text-muted-foreground font-medium">
             Guinea - Conakry
           </p>
         </div>
