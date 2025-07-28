@@ -11,7 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import VisualyHidden from '../VisualyHidden'
+import VisualyHidden from '@/components/common/VisualyHidden'
 
 export function ModeToggle() {
   const { setTheme } = useTheme()

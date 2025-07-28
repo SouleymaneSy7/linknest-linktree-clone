@@ -7,8 +7,8 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip'
 
-import Container from './Container'
-import List from './List'
+import Container from '@/components/common/Container'
+import List from '@/components/common/List'
 
 interface ProfileSocialsPropsType {
   socialsList: {

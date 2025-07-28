@@ -1,8 +1,8 @@
 'use client'
 
+import * as React from 'react'
 import { cn } from '@/lib/utils'
 import { motion } from 'motion/react'
-import React, { useEffect, useId, useRef, useState } from 'react'
 
 /**
  *  DotPattern Component Props
@@ -15,6 +15,7 @@ import React, { useEffect, useId, useRef, useState } from 'react'
  * @param {string} [className] - Additional CSS classes to apply to the SVG container
  * @param {boolean} [glow=false] - Whether dots should have a glowing animation effect
  */
+
 interface DotPatternProps extends React.SVGProps<SVGSVGElement> {
   width?: number
   height?: number
@@ -66,11 +67,11 @@ export function DotPattern({
   glow = false,
   ...props
 }: DotPatternProps) {
-  const id = useId()
-  const containerRef = useRef<SVGSVGElement>(null)
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
+  const id = React.useId()
+  const containerRef = React.useRef<SVGSVGElement>(null)
+  const [dimensions, setDimensions] = React.useState({ width: 0, height: 0 })
 
-  useEffect(() => {
+  React.useEffect(() => {
     const updateDimensions = () => {
       if (containerRef.current) {
         const { width, height } = containerRef.current.getBoundingClientRect()

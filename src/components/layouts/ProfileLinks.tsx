@@ -1,7 +1,8 @@
 import React from 'react'
+
 import { Button } from '@/components/ui/button'
 
-import List from '@/components/List'
+import List from '@/components/common/List'
 import {
   Tooltip,
   TooltipContent,

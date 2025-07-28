@@ -11,7 +11,7 @@ import {
 import {
   DiscordIcon,
   FrontendMentorIcon,
-} from '@/components/Icons/Icons.component'
+} from '@/components/icons/Icons.component'
 
 const profileData = {
   profile_name: 'Souleymane Sy',

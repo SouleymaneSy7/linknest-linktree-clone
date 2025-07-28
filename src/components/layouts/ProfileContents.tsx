@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { profileData } from '../../data'
+import { profileData } from '../../../data'
 
 import ProfileInfo from './ProfileInfo'
 import ProfileLinks from './ProfileLinks'

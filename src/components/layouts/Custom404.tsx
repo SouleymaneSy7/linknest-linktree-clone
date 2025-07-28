@@ -5,7 +5,7 @@
  */
 
 import Link from 'next/link'
-import Title from '@/components/Title'
+import Title from '@/components/common/Title'
 import { Button } from '@/components/ui/button'
 
 const Custom404 = () => {

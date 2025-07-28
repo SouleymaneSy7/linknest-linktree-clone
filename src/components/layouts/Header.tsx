@@ -1,10 +1,10 @@
 'use client'
 
 import * as React from 'react'
-
-import Container from '@/components/Container'
 import Link from 'next/link'
-import { ModeToggle } from './layouts/ModeToggle'
+
+import Container from '@/components/common/Container'
+import { ModeToggle } from '@/components/layouts/ModeToggle'
 
 const Header: React.FC = () => {
   return (

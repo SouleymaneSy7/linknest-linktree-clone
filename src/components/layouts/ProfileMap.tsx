@@ -1,9 +1,10 @@
 import * as React from 'react'
 
-import MapWithNoSSR from '@/components/Map/MapWithNoSSR'
-import Title from './Title'
-import Container from './Container'
 import { MapPinIcon } from 'lucide-react'
+
+import MapWithNoSSR from '@/components/map/MapWithNoSSR'
+import Title from '@/components/common/Title'
+import Container from '@/components/common/Container'
 
 const ProfileMap: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ const ProfileMap: React.FC = () => {
         <MapWithNoSSR />
       </div>
 
-      <div className="flex items-end justify-between flex-wrap gap-4">
+      <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <Title
             level="h3"

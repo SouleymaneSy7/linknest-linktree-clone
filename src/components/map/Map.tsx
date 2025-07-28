@@ -8,7 +8,7 @@ import { MapContainer } from 'react-leaflet/MapContainer'
 
 import 'leaflet/dist/leaflet.css'
 
-import { MARKER } from '../Icons/Icons.component'
+import { MARKER } from '@/components/icons/Icons.component'
 
 const lat = 9.727795
 const long = -13.437069

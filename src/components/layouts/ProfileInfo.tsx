@@ -1,8 +1,8 @@
 import * as React from 'react'
 import Image, { StaticImageData } from 'next/image'
 
-import Title from './Title'
-import Container from './Container'
+import Title from '@/components/common/Title'
+import Container from '@/components/common/Container'
 
 interface ProfileInfoPropsType {
   profileName: string
@@ -23,7 +23,7 @@ const ProfileInfo: React.FC<ProfileInfoPropsType> = ({
         <div className="h-24 w-24 md:h-40 md:w-40">
           <Image
             src={profileImg}
-            alt="Photo d'un homme"
+            alt="profile image"
             className="aspect-square h-full w-full rounded-full object-cover"
             width={800}
             height={800}

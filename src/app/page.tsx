@@ -1,10 +1,10 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import Header from '@/components/Header'
-import Main from '@/components/Main'
+import Header from '@/components/layouts/Header'
+import Main from '@/components/layouts/Main'
 
+import { DotPattern } from '@/components/ui/dot-pattern'
 import { cn } from '@/lib/utils'
-import { DotPattern } from '@/components/magicui/dot-pattern'
 
 export default function Home() {
   return (
