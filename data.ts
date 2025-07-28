@@ -21,14 +21,14 @@ const profileData = {
     'Skilled Frontend Developer delivering innovative, design-driven solutions, proudly from Guinea-Conakry. 🌍',
   profile_links: [
     {
-      name: 'Portfolio',
-      title: 'Hack into my Terminal Portfolio! 🎉',
-      url: 'https://terminal-portfolio-website-xi.vercel.app/',
-    },
-    {
       name: 'E-mail',
       title: 'Drop me a super cool e-mail! ✉️',
       url: 'mailto:souleymanesydeveloppers@gmail.com',
+    },
+    {
+      name: 'Portfolio',
+      title: 'Hack into my Terminal Portfolio! 🎉',
+      url: 'https://terminal-portfolio-website-xi.vercel.app/',
     },
   ],
   profile_socials: [
