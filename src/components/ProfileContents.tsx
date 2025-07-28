@@ -16,8 +16,8 @@ const ProfileContents: React.FC = () => {
         profileWork={profileData.profile_work}
         profileBio={profileData.profile_bio}
       />
-      <ProfileMap />
       <ProfileLinks linkList={profileData.profile_links} />
+      <ProfileMap />
       <ProfileSocials socialsList={profileData.profile_socials} />
     </main>
   )
