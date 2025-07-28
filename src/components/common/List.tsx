@@ -1,10 +1,5 @@
 import * as React from 'react'
-
-type ListPropsType<Item, As extends React.ElementType> = {
-  items: Item[]
-  renderItem: (item: Item) => React.ReactNode
-  as?: As
-}
+import { ListPropsType } from '@/types'
 
 function List<Item, As extends React.ElementType>({
   items,

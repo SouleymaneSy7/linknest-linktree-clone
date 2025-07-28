@@ -3,6 +3,7 @@
 import * as React from 'react'
 import { cn } from '@/lib/utils'
 import { motion } from 'motion/react'
+import { DotPatternProps } from '@/types'
 
 /**
  *  DotPattern Component Props
@@ -15,17 +16,6 @@ import { motion } from 'motion/react'
  * @param {string} [className] - Additional CSS classes to apply to the SVG container
  * @param {boolean} [glow=false] - Whether dots should have a glowing animation effect
  */
-
-interface DotPatternProps extends React.SVGProps<SVGSVGElement> {
-  width?: number
-  height?: number
-  cx?: number
-  cy?: number
-  cr?: number
-  className?: string
-  glow?: boolean
-  [key: string]: unknown
-}
 
 /**
  * DotPattern Component

@@ -1,10 +1,7 @@
 'use client'
 
-import React, { type ComponentPropsWithoutRef, type ReactNode } from 'react'
-
-type VisuallyHiddenPropsType = {
-  children: ReactNode
-} & ComponentPropsWithoutRef<'span'>
+import * as React from 'react'
+import { VisuallyHiddenPropsType } from '@/types'
 
 const VisualyHidden: React.FC<VisuallyHiddenPropsType> = ({
   children,

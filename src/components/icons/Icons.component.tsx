@@ -1,9 +1,5 @@
 import * as React from 'react'
-
-type IconPropsType = {
-  strokeWidth?: string
-  stroke?: string
-} & React.ComponentPropsWithoutRef<'svg'>
+import { IconPropsType } from '@/types'
 
 export const DiscordIcon: React.FC<IconPropsType> = ({
   strokeWidth = 2,

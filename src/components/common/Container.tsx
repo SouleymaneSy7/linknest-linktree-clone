@@ -1,15 +1,7 @@
-import {
-  type ReactNode,
-  type ElementType,
-  type ComponentPropsWithoutRef,
-} from 'react'
+import * as React from 'react'
+import { ContainerTypes } from '@/types'
 
-type ContainerTypes<T extends ElementType> = {
-  as?: T
-  children: ReactNode
-} & ComponentPropsWithoutRef<T>
-
-function Container<C extends ElementType>({
+function Container<C extends React.ElementType>({
   as,
   children,
   ...delegatedProps

@@ -1,16 +1,12 @@
-import React, { type HTMLAttributes } from 'react'
-
-interface TitleProps extends HTMLAttributes<HTMLElement> {
-  level: keyof React.JSX.IntrinsicElements
-  children: React.ReactNode
-}
+import * as React from 'react'
+import { TitleProps } from '@/types'
 
 const Title: React.FC<TitleProps> = ({
   level,
   children,
   ...delegatedProps
 }) => {
-  const Heading: React.FC<HTMLAttributes<HTMLElement>> = ({
+  const Heading: React.FC<React.HTMLAttributes<HTMLElement>> = ({
     ...delegatedProps
   }) => {
     return React.createElement(level, delegatedProps, children)

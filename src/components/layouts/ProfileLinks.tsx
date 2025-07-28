@@ -8,14 +8,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
-
-interface ProfileLinksPropsType {
-  linkList: {
-    name: string
-    title: string
-    url: string
-  }[]
-}
+import { ProfileLinksPropsType } from '@/types'
 
 const ProfileLinks: React.FC<ProfileLinksPropsType> = ({ linkList }) => {
   return (

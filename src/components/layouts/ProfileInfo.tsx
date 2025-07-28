@@ -1,15 +1,9 @@
 import * as React from 'react'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 
 import Title from '@/components/common/Title'
 import Container from '@/components/common/Container'
-
-interface ProfileInfoPropsType {
-  profileName: string
-  profileImg: StaticImageData
-  profileWork: string
-  profileBio: string
-}
+import { ProfileInfoPropsType } from '@/types'
 
 const ProfileInfo: React.FC<ProfileInfoPropsType> = ({
   profileImg,
