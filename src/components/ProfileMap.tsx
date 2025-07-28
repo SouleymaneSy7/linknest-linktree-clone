@@ -9,7 +9,7 @@ const ProfileMap: React.FC = () => {
   return (
     <Container
       as={'section'}
-      className="bg-secondary mb-4 rounded-sm px-4 py-5 lg:px-6 lg:py-5"
+      className="bg-secondary mt-8 rounded-sm px-4 py-5 lg:px-6 lg:py-5"
     >
       <Title
         level="h2"
