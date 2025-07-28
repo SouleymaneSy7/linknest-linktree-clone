@@ -1,5 +1,7 @@
 # LinkNest - Personal Profile
 
+![Website Demo Preview](./public/preview/preview.png)
+
 ## Description
 
 LinkNest is a personal web page designed to showcase my profile as a **frontend web developer**. Inspired by [Linktree](https://linktr.ee/) , this webpage allows visitors to discover my contact information, location, and portfolio through an interactive interface. It is built using modern technologies.
@@ -14,7 +16,7 @@ LinkNest is a personal web page designed to showcase my profile as a **frontend 
 ## Technologies Used
 
 - **Next.js**: React framework for optimal performance and server-side rendering.
-- **Typescript**: strongly typed programming language that builds on JavaScript,giving you better tooling at any scale
+- **Typescript**: strongly typed programming language that builds on JavaScript,giving you better tooling at any scale.
 - **TailwindCSS**: Used for responsive and customized design.
 - **shadcn**: Reusable UI components for a modern interface.
 - **lucide-react**: Vector icons for a rich visual experience.
@@ -27,10 +29,8 @@ LinkNest is a personal web page designed to showcase my profile as a **frontend 
 1. Clone the repository:
 
    ```bash
-
+   git clone https://github.com/souleymanesy7/linknest-linktree-clone.git
    ```
-
-   <https://github.com/SouleymaneSy7/linknest-linktree-clone.git>
 
 2. Navigate to the directory:
 
@@ -61,4 +61,4 @@ LinkNest is a personal web page designed to showcase my profile as a **frontend 
 ## Contact
 
 - **Email**: [souleymanesydeveloppers@gmail.com](mailto:souleymanesydeveloppers@gmail.com)
-- **GitHub**: [github.com/SouleymaneSy7](https://github.com/SouleymaneSy7)
+- **GitHub**: [github.com/SouleymaneSy7](https://github.com/souleymanesy7)
