@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Button } from '@/components/ui/button'
+
 import {
   Tooltip,
   TooltipContent,
@@ -21,7 +22,7 @@ const ProfileSocials: React.FC<ProfileSocialsPropsType> = ({ socialsList }) => {
   return (
     <Container as="div" className="mt-12 grid place-items-center">
       <List
-        className="flex items-center gap-4"
+        className="flex flex-wrap items-center justify-center gap-4"
         items={socialsList}
         renderItem={({ title, url, src }) => {
           const Icon = src
@@ -30,24 +31,26 @@ const ProfileSocials: React.FC<ProfileSocialsPropsType> = ({ socialsList }) => {
             <li key={title}>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Button variant="ghost" asChild>
+                  <Button
+                    variant="ghost"
+                    className="[&_svg:not([class*='size-'])]:size-6"
+                    asChild
+                  >
                     <a
                       href={url}
                       target="_blank"
                       className="text-foreground hover:text-primary transition-colors"
                     >
                       <Icon
-                        className="text-current-color sm:h-6 sm:w-6 lg:h-8 lg:w-8"
+                        className="text-current-color"
                         stroke="currentcolor"
-                        strokeWidth={2}
+                        strokeWidth={2.3}
                       />
                     </a>
                   </Button>
                 </TooltipTrigger>
 
-                <TooltipContent>
-                  <p>{title}</p>
-                </TooltipContent>
+                <TooltipContent>{title}</TooltipContent>
               </Tooltip>
             </li>
           )
