@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 import Header from '@/components/Header'
 import Main from '@/components/Main'
@@ -11,7 +11,6 @@ export default function Home() {
     <React.Fragment>
       <div className="absolute inset-0 -z-50 flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
         <DotPattern
-          glow={true}
           className={cn(
             '[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]'
           )}
