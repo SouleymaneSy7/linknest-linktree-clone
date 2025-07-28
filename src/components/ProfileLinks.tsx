@@ -29,7 +29,7 @@ const ProfileLinks: React.FC<ProfileLinksPropsType> = ({ linkList }) => {
                 <Button
                   asChild
                   variant="secondary"
-                  className="font-space-grotesk text-foreground grid h-13 w-full place-items-center rounded-sm font-bold"
+                  className="font-space-grotesk text-foreground grid h-12 w-full place-items-center rounded-sm font-bold"
                 >
                   <a href={url} target="_blank">
                     {name}
