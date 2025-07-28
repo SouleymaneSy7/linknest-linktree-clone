@@ -77,9 +77,9 @@
 
 @theme {
   --text-*: initial;
-  --text-body: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
-  --text-sub-heading: clamp(1.125rem, 1.0893rem + 0.1786vw, 1.25rem);
-  --text-heading: clamp(2rem, 1.9286rem + 0.3571vw, 2.25rem);
+  --text-body: clamp(0.9375rem, 0.9196rem + 0.0893vw, 1rem);
+  --text-sub-heading: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+  --text-heading: clamp(1.25rem, 1.1071rem + 0.7143vw, 1.75rem);
 
   --font-*: initial;
   --font-space-grotesk: var(--font-space-grotesk);
