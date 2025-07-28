@@ -33,7 +33,7 @@ const Map: React.FC = () => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker position={[lat, long]} icon={MarkerIcon}>
-        <Popup>👋️ Salut tous le monde.</Popup>
+        <Popup>👋️ Hello World.</Popup>
       </Marker>
     </MapContainer>
   )
